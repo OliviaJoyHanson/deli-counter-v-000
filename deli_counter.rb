@@ -8,5 +8,9 @@ def line(katz_deli)
     current_line = katz_deli.collect{|person| " #{katz_deli.index(person)+1}. " << person}
     puts "The line is currently:" << current_line.join
   end
+end
 
+def take_a_number(katz_deli, new_person)
+  katz_deli.push(new_person)
+  puts "#{katz_deli.index(new_person) + 1}"
 end
