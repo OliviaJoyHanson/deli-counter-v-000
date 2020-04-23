@@ -6,7 +6,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     current_line = katz_deli.collect{|person| "#{katz_deli.index(person)+1}. " << person}
-    puts "The line is currently: " << current_line.join(",")
+    puts "The line is currently: " << current_line.join
   end
 
 end
